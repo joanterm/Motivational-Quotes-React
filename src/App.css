@@ -1,43 +1,54 @@
-
-html {
-  font-size: 18px;
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@media only screen and (max-width: 560px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-input:focus {
-  outline: none;
-}
-
-/* Reusable Component - Image Container */
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  background: #000;
-}
-
-.image-container img {
-  width: 100%;
-}
-
-/* App Styles */
-
-.App {
-  font-family: 'Work Sans', sans-serif;
+.btn-container {
+    flex-direction: row;
 }
 
 h1 {
-  padding: .66rem 0;
-  text-align: center;
-  background-color: #cca353;
-  font-family: Poppins, sans-serif;
-  font-size: 1.8rem;
-  color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1em;
 }
+
+.initial-text {
+    color: #F11866;
+}
+
+button {
+    padding: 1em 2em;
+    margin-right: 1em;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-one {
+    background-color: #F11866;
+    border: 1px solid #F11866;
+    color: white;
+}
+
+.btn-two {
+    background-color: inherit;
+    border: 1px solid #F11866;
+
+}
+
+.btn-one,
+.btn-two {
+    font-weight: 600;
+}
+
+.btn-one:hover,
+.btn-two:hover {
+    background-color: #f76ea0;
+}
+
+
